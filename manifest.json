@@ -1,0 +1,35 @@
+{
+  "name": "HTML5 Video Controller",
+  "author": "Gabriel Garcia",
+  "description": "Allows user to change playback settings of HTML5 videos on Microsoft Edge.",
+  "version": "1.0",
+  "icons": {
+    "25": "images/play_25.png",
+    "48": "images/play_48.png"
+  },
+  "permissions": [
+    "*://docs.microsoft.com/*",
+    "tabs",
+    "storage"
+  ], 
+  "browser_action": {
+    "default_icon": {
+      "20": "images/play_20.png",
+      "40": "images/play_40.png",
+      "128": "images/play_128.png"
+    },
+    "default_title": "Video Controller",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": [
+        "<all_urls>"
+    ],
+    "js": ["js/content.js"],
+    "run_at": "document_end"
+}],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  }
+}

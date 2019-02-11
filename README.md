@@ -1,16 +1,16 @@
-# EdgeVideoController
-A Microsoft Edge extension for HTML5 videos that allows the user to control playback speed and skip forward/backwards using hotkeys.
+# Color Changer
 
-# First, a thank you
-Thank you to developer igrigorik. His extension on chrome was amazing, and becuase I was unable to port it, it inspired me to make my own extension. [A link to his extension on github](https://github.com/igrigorik/videospeed)
+This Microsoft Edge extension sample shows how to create an extension for Microsoft Edge.  Use the tutorial [Creating a Microsoft Edge extension](https://docs.microsoft.com/microsoft-edge/extensions/guides/creating-an-extension) with this sample. 
 
-# How to use
-| Hotkey | Function |
-| ------ | ------ |
-| A | Slowdown by speed specified in popup |
-| S | Speedup by speed specified in popup |
-| Z | Rewind by seconds specified in popup |
-| X | Forward by seconds specified in popup |
+## Behavior 
 
-# Customize settings
-![](https://i.imgur.com/WqoFIEj.png?raw=true)
+This example extension will allow you to manipulate specific CSS for [docs.microsoft.com](https://docs.microsoft.com) pages, changing the header color to red, blue, and back to the original color. 
+
+The sample was intended to be used with the [Creating a Microsoft Edge extension](https://docs.microsoft.com/microsoft-edge/extensions/guides/creating-an-extension) guide. 
+
+## APIs used
+* [`tabs.insertCSS()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/tabs/insertCSS)
+* [`runtime.sendMessage()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/sendMessage)
+* [`runtime.onMessage`](https://developer.mozilla.org/Add-ons/WebExtensions/API/runtime/onmessage)
+* [`browserAction.setIcon()`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/setIcon)
+* [`browserAction.disable`](https://developer.mozilla.org/Add-ons/WebExtensions/API/browserAction/disable)
