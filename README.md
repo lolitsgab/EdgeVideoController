@@ -10,4 +10,4 @@ A Microsoft Edge extension for HTML5 videos that allows the user to control play
 | Z | Forward by seconds specified in popup |
 
 # Customize settings
-![Pop-up] (https://i.imgur.com/WqoFIEj.png "Pop-up")
+![](https://i.imgur.com/WqoFIEj.png?raw=true)
